@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index(request):
+    return render(request, 'index.html', {})
+
+def category_detateil(request,id):
+    return render(request, 'index.html', {})
+
+def recip_detateil(request,id):
+    return render(request, 'index.html', {})

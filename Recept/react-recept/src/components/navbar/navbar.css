@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navbar__link {
+  margin-left: 2rem;
+  position: relative;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:black
+}
+.navbar__link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    transition: width .2s linear;
+}
+.navbar__link:hover::after{
+    width:100%
+}

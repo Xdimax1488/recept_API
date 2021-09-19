@@ -14,3 +14,15 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
+
+
+class CategoryDatailSerializer(serializers.ModelSerializer):
+    recipes = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Category
+        fields = '__all__'
+
+    @staticmethod
+    def get_recipes(obj):
+        return RecipesSerializer(Recipe.objects.filter(category=obj), many=True).data

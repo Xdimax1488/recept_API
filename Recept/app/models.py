@@ -23,8 +23,8 @@ class Recipe(models.Model):
     image = models.ImageField('изображение', upload_to='images/items/%Y/%m/%d')
 
     class Meta:
-        verbose_name = 'рецепт'
-        verbose_name_plural = 'пецепты'
+        verbose_name = 'Рецепт'
+        verbose_name_plural = 'Рецепты'
 
     def __str__(self):
         return f'{self.name},{self.description},{self.category},{self.created},{self.image}'
