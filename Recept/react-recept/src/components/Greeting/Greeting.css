@@ -1,0 +1,15 @@
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -6rem;
+}
+.greeting h1 {
+  font-size: 4rem;
+}
+.greeting p {
+  font-size: 2rem;
+  margin-top: -0.5rem;
+}

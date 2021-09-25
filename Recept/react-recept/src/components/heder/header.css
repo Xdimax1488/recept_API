@@ -2,10 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .header__logo {
   width: 140px;
   height: 140px;
+}
+.header__logo img{
+  width: 140px;
+  height: 140px;
+
 }
 .header_nav {
   margin-top: 18px;

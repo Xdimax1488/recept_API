@@ -34,7 +34,7 @@ function CategoryDeteil({match}) {
             <div className="recipes__col" key={rec.id}>
               <Link to={{pathname:`/recip/${rec.id}`,fromDashboard:false}}>
               <div className="recip">
-                <img src={rec.image} alt="images"/>
+                <img src={rec.image} fluid/>
                 <div className="recip__content">
                   <div className="recip__tittle">{rec.name}</div>
                   <div className="recip__cat">

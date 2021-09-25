@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/heder/header';
 import CategoryDeteil from './components/category/categores';
 import RecipeDetail from './components/recipes/recipeDetail';
+import Greeting from './components/Greeting/Greeting';
 
 function App() {
   
@@ -14,8 +15,10 @@ function App() {
     <div className="App">
       <div className="conteiner">
         <Router>
-          <Header/>
+        <Header/>
+          
           <Switch>
+            <Route path="/" exact component={ Greeting }/>
             <Route path="/recip/:id"exact component={RecipeDetail}/>
             <Route path="/category/:id"exact component={CategoryDeteil}/>
           </Switch>
